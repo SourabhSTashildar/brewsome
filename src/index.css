@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/cormorant-garamond';
+@import '@fontsource-variable/cormorant-garamond/wght-italic.css';
+@import '@fontsource-variable/inter';
+
+/* Animate UI components ship Tailwind classes; let Tailwind scan them. */
+@source "../node_modules/@animate-ui/react/dist";
+
+@theme {
+  --color-ink: #120a06;
+  --color-roast: #1d120b;
+  --color-bean: #2e1c11;
+  --color-mocha: #5a3a26;
+  --color-brass: #c9985c;
+  --color-brass-soft: #e2bf8e;
+  --color-cream: #f4ead8;
+  --color-paper: #f7f0e4;
+  --color-muted: #8b7566;
+
+  --font-display: 'Cormorant Garamond Variable', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --animate-steam: steam 4s ease-in-out infinite;
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-float: float 9s ease-in-out infinite;
+
+  @keyframes steam {
+    0%, 100% { opacity: 0.15; transform: translateY(8px) scaleX(1); }
+    50% { opacity: 0.75; transform: translateY(-10px) scaleX(1.15); }
+  }
+  @keyframes marquee {
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -14px; }
+  }
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: var(--color-brass); color: var(--color-ink); }
+
+/* Subtle film grain over everything, for a printed, tactile feel */
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 60; pointer-events: none; opacity: .06; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+.eyebrow { font-size: .72rem; letter-spacing: .32em; text-transform: uppercase; color: var(--color-brass); }
+.hairline { height: 1px; background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--color-brass) 55%, transparent), transparent); }
+.outline-text { -webkit-text-stroke: 1.2px color-mix(in oklab, var(--color-brass) 75%, transparent); color: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; }
+}

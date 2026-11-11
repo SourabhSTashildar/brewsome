@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brewsome — good coffee, brewed slowly</title>
+  <meta name="description" content="Brewsome is a coffee page about slow brewing, honest beans and the perfect cup. Brew guides, a ratio calculator and a pour-over timer.">
+  <meta name="theme-color" content="#2b1a12">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Brewsome home">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><use href="#bean"/></svg>
+    <span>brewsome</span>
+  </a>
+  <nav>
+    <a href="#guides">Guides</a>
+    <a href="#tools">Tools</a>
+    <a href="#feed">Feed</a>
+    <a href="#about">About</a>
+    <a class="pill" href="https://instagram.com/brewsome.coffee" target="_blank" rel="noopener">Follow</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-beans" aria-hidden="true">
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.55" data-from="top" style="left:4%;top:12%;width:46px;--r:25deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.35" data-from="top" style="left:44%;top:6%;width:30px;--r:-40deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.7"  data-from="top" style="left:90%;top:14%;width:56px;--r:70deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.25" data-from="top" style="left:52%;top:78%;width:38px;--r:150deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="-0.15" data-from="top" style="left:8%;top:84%;width:64px;--r:-20deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.45" data-from="top" style="left:78%;top:70%;width:34px;--r:110deg"><use href="#bean"/></svg>
+    </div>
+    <div class="hero-text" data-speed="0.12" data-from="top">
+      <p class="eyebrow">Coffee, slowly.</p>
+      <h1>Brew <em>some</em> good<br>into your morning.</h1>
+      <p class="lead">Honest beans, patient pours and the occasional strong opinion about grind size. Welcome to Brewsome.</p>
+      <div class="cta">
+        <a class="btn primary" href="#tools">Brew a cup</a>
+        <a class="btn" href="https://instagram.com/brewsome.coffee" target="_blank" rel="noopener">@brewsome.coffee</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true" data-speed="0.28" data-from="top">
+      <svg viewBox="0 0 320 320" class="cup">
+        <ellipse cx="160" cy="278" rx="120" ry="18" fill="#000" opacity=".18"/>
+        <path d="M60 120h190v70c0 44-36 80-80 80h-30c-44 0-80-36-80-80z" fill="#f4ead8"/>
+        <path d="M250 140h22c20 0 30 14 30 30s-10 30-30 30h-30" fill="none" stroke="#f4ead8" stroke-width="16" stroke-linecap="round"/>
+        <ellipse cx="155" cy="120" rx="95" ry="20" fill="#5a3a26"/>
+        <ellipse cx="155" cy="120" rx="80" ry="14" fill="#7a4e32"/>
+        <path d="M130 122c10-8 20-8 30 0s20 8 30 0" fill="none" stroke="#f4ead8" stroke-width="3" opacity=".7"/>
+        <g class="steam" fill="none" stroke="#f4ead8" stroke-width="5" stroke-linecap="round" opacity=".6">
+          <path d="M120 85c-14-14 14-24 0-40"/>
+          <path d="M160 80c-14-14 14-24 0-40"/>
+          <path d="M200 85c-14-14 14-24 0-40"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>pour over</span><span>•</span><span>espresso</span><span>•</span><span>aeropress</span><span>•</span><span>french press</span><span>•</span><span>cold brew</span><span>•</span><span>moka pot</span><span>•</span>
+      <span>pour over</span><span>•</span><span>espresso</span><span>•</span><span>aeropress</span><span>•</span><span>french press</span><span>•</span><span>cold brew</span><span>•</span><span>moka pot</span><span>•</span>
+    </div>
+  </section>
+
+  <section id="guides" class="section">
+    <h2>Brew guides</h2>
+    <p class="sub">Starting points, not commandments. Taste, then tweak.</p>
+    <div class="cards">
+      <article class="card">
+        <h3>Pour over</h3>
+        <p class="meta">1:16 · 94°C · 3:00</p>
+        <ol>
+          <li>Rinse the filter, discard the water.</li>
+          <li>Bloom with 2× coffee weight for 30s.</li>
+          <li>Pour in slow circles to full weight by 1:30.</li>
+          <li>Let it drain. Swirl. Sip.</li>
+        </ol>
+      </article>
+      <article class="card">
+        <h3>AeroPress</h3>
+        <p class="meta">1:14 · 90°C · 2:00</p>
+        <ol>
+          <li>Inverted. Add coffee, pour to full.</li>
+          <li>Stir 10 seconds, steep 90s.</li>
+          <li>Flip onto the cup, press gently for 30s.</li>
+          <li>Stop at the hiss.</li>
+        </ol>
+      </article>
+      <article class="card">
+        <h3>French press</h3>
+        <p class="meta">1:15 · 95°C · 4:00</p>
+        <ol>
+          <li>Coarse grind, pour all the water.</li>
+          <li>Wait 4 minutes. Do not stir.</li>
+          <li>Break the crust, skim the foam.</li>
+          <li>Press slowly, serve immediately.</li>
+        </ol>
+      </article>
+      <article class="card">
+        <h3>Cold brew</h3>
+        <p class="meta">1:8 · fridge · 14h</p>
+        <ol>
+          <li>Coarse grind into a jar, add cold water.</li>
+          <li>Stir, cover, refrigerate overnight.</li>
+          <li>Strain through a paper filter.</li>
+          <li>Dilute 1:1 with water or milk, over ice.</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <section id="tools" class="section tools">
+    <h2>Brew tools</h2>
+    <p class="sub">A ratio calculator and a pour-over timer. No sign-up, no server, works offline.</p>
+
+    <div class="tool-grid">
+      <div class="tool">
+        <h3>Ratio calculator</h3>
+        <label>Method
+          <select id="method">
+            <option value="16">Pour over (1:16)</option>
+            <option value="14">AeroPress (1:14)</option>
+            <option value="15">French press (1:15)</option>
+            <option value="8">Cold brew (1:8)</option>
+            <option value="2">Espresso (1:2)</option>
+          </select>
+        </label>
+        <label>I want <output id="cupsOut">300</output> ml of coffee
+          <input id="ml" type="range" min="50" max="1000" step="10" value="300">
+        </label>
+        <div class="result">
+          <div><span id="coffeeG">19</span><small>g coffee</small></div>
+          <div><span id="waterG">300</span><small>g water</small></div>
+        </div>
+        <p class="hint" id="ratioHint"></p>
+      </div>
+
+      <div class="tool">
+        <h3>Pour-over timer</h3>
+        <div class="clock" id="clock" aria-live="off">0:00</div>
+        <p class="step" id="step">Ready when you are.</p>
+        <div class="bar"><i id="bar"></i></div>
+        <div class="cta">
+          <button class="btn primary" id="start" type="button">Start</button>
+          <button class="btn" id="reset" type="button">Reset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feed" class="section">
+    <h2>From the feed</h2>
+    <p class="sub">Latest from <a href="https://instagram.com/brewsome.coffee" target="_blank" rel="noopener">@brewsome.coffee</a>. Tap any tile to open it on Instagram.</p>
+    <div class="grid" id="feedGrid">
+      <noscript><a class="btn primary" href="https://instagram.com/brewsome.coffee">See the feed on Instagram</a></noscript>
+    </div>
+    <div class="cta feed-cta">
+      <a class="btn" href="https://instagram.com/brewsome.coffee" target="_blank" rel="noopener">View all on Instagram</a>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Brewsome motto">
+    <div class="band-beans" aria-hidden="true">
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.3"  style="left:6%;top:18%;width:70px;--r:30deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="-0.2" style="left:20%;top:70%;width:40px;--r:-50deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.5"  style="left:82%;top:12%;width:44px;--r:95deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="0.15" style="left:90%;top:64%;width:84px;--r:-15deg"><use href="#bean"/></svg>
+      <svg class="bean" viewBox="0 0 32 32" data-speed="-0.35" style="left:60%;top:82%;width:32px;--r:140deg"><use href="#bean"/></svg>
+    </div>
+    <p class="band-text" data-speed="0.14">Slow living.<br><em>Slow brewing.</em></p>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Brewsome</h2>
+    <p>Slow living, slow brewing. Brewsome is a home-brewing diary from Goa: the beans, the gear, the mistakes and the occasional perfect pour. No gatekeeping, no snobbery, just better coffee at home.</p>
+    <p>Brews by <a href="https://instagram.com/sourabhtashildar91" target="_blank" rel="noopener">@sourabhtashildar91</a>.</p>
+    <p class="onchain">This site lives on IPFS and is reachable through an onchain domain.</p>
+  </section>
+
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Brewsome</span>
+  <a href="https://instagram.com/brewsome.coffee" target="_blank" rel="noopener">Instagram</a>
+</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bean" viewBox="0 0 32 32">
+    <ellipse cx="16" cy="16" rx="9" ry="13" transform="rotate(30 16 16)" fill="currentColor"/>
+    <path d="M10 6c6 6-2 14 4 22" transform="rotate(30 16 16)" fill="none" stroke="#2b1a12" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<script src="feed.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
